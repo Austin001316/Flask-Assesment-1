@@ -1,0 +1,16 @@
+<html>
+    <body>
+        {% if error != None %}
+        <h2>{{error}}</h2>
+        {% endif %}
+        <h1>This is my currency converter.</h1>
+        <p>Please enter the currency you want to convert from and the currency you want to convert to.</p>
+            <form method="POST" action="/convert">
+                <input type="text" name="input1" placeholder="First currency"/>
+                <input type="text" name="input2" placeholder="Second currency"/>
+                <input type="text" name="amount" placeholder="Amount"/>
+                <button id="Submit" role="button" type="submit">Submit</button>
+            </form>
+            <a href="https://forex-python.readthedocs.io/en/latest/currencysource.html">Api's currently supported currencies.</a>
+    </body>
+</html>
